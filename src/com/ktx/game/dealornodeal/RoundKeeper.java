@@ -9,6 +9,6 @@ public class RoundKeeper {
 	
 	Round getRound()
 	{
-		return new Round();
+		return new Round(6);
 	}
 }
