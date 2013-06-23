@@ -1,4 +1,6 @@
-package com.example.dealornodeal;
+package com.ktx.game.dealornodeal;
+
+import com.example.dealornodeal.R;
 
 import android.app.Activity;
 import android.content.Intent;
