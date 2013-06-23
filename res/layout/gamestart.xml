@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/CaseLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableRow
+        android:id="@+id/TableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ToggleButton
+            android:id="@+id/case22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onToggleClicked"
+            android:textOn="22" />
+
+        <ToggleButton
+            android:id="@+id/case23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onToggleClicked"
+            android:textOff="OFF"
+            android:textOn="23" />
+
+        <ToggleButton
+            android:id="@+id/case24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onToggleClicked"
+            android:textOn="24" />
+
+        <ToggleButton
+            android:id="@+id/case25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onToggleClicked"
+            android:textOn="25" />
+
+        <ToggleButton
+            android:id="@+id/case26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onToggleClicked"
+            android:textOn="26" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/TableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ToggleButton
+            android:id="@+id/case17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onToggleClicked"
+            android:textOn="17" />
+
+        <ToggleButton
+            android:id="@+id/case18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onToggleClicked"
+            android:textOn="18" />
+
+        <ToggleButton
+            android:id="@+id/case19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onToggleClicked"
+            android:textOn="19" />
+
+        <ToggleButton
+            android:id="@+id/case20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onToggleClicked"
+            android:textOn="20" />
+
+        <ToggleButton
+            android:id="@+id/case21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onToggleClicked"
+            android:textOn="21" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/TableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ToggleButton
+            android:id="@+id/case12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onToggleClicked"
+            android:textOn="12" />
+
+        <ToggleButton
+            android:id="@+id/case13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onToggleClicked"
+            android:textOn="13" />
+
+        <ToggleButton
+            android:id="@+id/case14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onToggleClicked"
+            android:textOn="14" />
+
+        <ToggleButton
+            android:id="@+id/case15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onToggleClicked"
+            android:textOn="15" />
+
+        <ToggleButton
+            android:id="@+id/case16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onToggleClicked"
+            android:textOn="16" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ToggleButton
+            android:id="@+id/case7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onToggleClicked"
+            android:textOn="7" />
+
+        <ToggleButton
+            android:id="@+id/case8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onToggleClicked"
+            android:textOn="8" />
+
+        <ToggleButton
+            android:id="@+id/case9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onToggleClicked"
+            android:textOn="9" />
+
+        <ToggleButton
+            android:id="@+id/case10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onToggleClicked"
+            android:textOn="10" />
+
+        <ToggleButton
+            android:id="@+id/case11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onToggleClicked"
+            android:textOn="11" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ToggleButton
+            android:id="@+id/case2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onToggleClicked"
+            android:textOn="2" />
+
+        <ToggleButton
+            android:id="@+id/case3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onToggleClicked"
+            android:textOn="3" />
+
+        <ToggleButton
+            android:id="@+id/case4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onToggleClicked"
+            android:textOn="4" />
+
+        <ToggleButton
+            android:id="@+id/case5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onToggleClicked"
+            android:textOn="5" />
+
+        <ToggleButton
+            android:id="@+id/case6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onToggleClicked"
+            android:textOn="6" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ToggleButton
+            android:id="@+id/case1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onToggleClicked"
+            android:textOn="1" />
+    </TableRow>
+
+</TableLayout>
