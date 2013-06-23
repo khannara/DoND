@@ -20,8 +20,8 @@ public class GameStartActivity extends Activity {
         
         
         case1 = (ToggleButton) findViewById(R.id.case1);
-        
-
+        case2 = (ToggleButton) findViewById(R.id.case2);
+        case3 = (ToggleButton) findViewById(R.id.case3);
        
         }
 }
