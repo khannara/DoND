@@ -81,11 +81,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
 
-        <Button
+        <ImageButton
             android:id="@+id/case12"
             android:layout_width="70px"
             android:layout_height="70px"
-            android:text="12" />
+            android:src="@drawable/twelve" />
 
         <Button
             android:id="@+id/case13"
@@ -117,35 +117,35 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
 
-        <Button
+        <ImageButton
             android:id="@+id/case7"
             android:layout_width="70px"
             android:layout_height="70px"
-            android:text="7" />
+            android:src="@drawable/seven" />
 
-        <Button
+        <ImageButton
             android:id="@+id/case8"
             android:layout_width="70px"
             android:layout_height="70px"
-            android:text="8" />
+            android:src="@drawable/eight" />
 
-        <Button
+        <ImageButton
             android:id="@+id/case9"
             android:layout_width="70px"
             android:layout_height="70px"
-            android:text="9" />
+            android:src="@drawable/nine" />
 
-        <Button
+        <ImageButton
             android:id="@+id/case10"
             android:layout_width="70px"
             android:layout_height="70px"
-            android:text="10" />
+            android:src="@drawable/ten" />
 
-        <Button
+        <ImageButton
             android:id="@+id/case11"
             android:layout_width="70px"
             android:layout_height="70px"
-            android:text="11" />
+            android:src="@drawable/eleven" />
     </TableRow>
 
     <TableRow
@@ -153,35 +153,35 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
 
-        <Button
+        <ImageButton
             android:id="@+id/case2"
             android:layout_width="70px"
             android:layout_height="70px"
-            android:text="2" />
+            android:src="@drawable/two" />
 
-        <Button
+        <ImageButton
             android:id="@+id/case3"
             android:layout_width="70px"
             android:layout_height="70px"
-            android:text="3" />
+            android:src="@drawable/three" />
 
-        <Button
+        <ImageButton
             android:id="@+id/case4"
             android:layout_width="70px"
             android:layout_height="70px"
-            android:text="4" />
+            android:src="@drawable/four" />
 
-        <Button
+        <ImageButton
             android:id="@+id/case5"
             android:layout_width="70px"
             android:layout_height="70px"
-            android:text="5" />
+            android:src="@drawable/five" />
 
-        <Button
+        <ImageButton
             android:id="@+id/case6"
             android:layout_width="70px"
             android:layout_height="70px"
-            android:text="6" />
+            android:src="@drawable/six" />
     </TableRow>
 
     <TableRow
