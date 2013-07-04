@@ -1,10 +1,7 @@
 package com.ktx.game.dealornodeal;
 
 import java.util.ArrayList;
-<<<<<<< HEAD
-=======
 import java.util.HashMap;
->>>>>>> origin/master
 
 import com.ktx.game.dealornodeal.R;
 
@@ -16,11 +13,6 @@ import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.ToggleButton;
 
-<<<<<<< HEAD
-public class GameStartActivity extends Activity {
-	private ImageButton case1, case2, case3, case4, case5, case6, case7, case8, case9, case10, case11, case12, case13, case14, case15, case16, case17, case18, case19, case20, case21, case22, case23, case24, case25, case26;
-
-=======
 
 public class GameStartActivity extends Activity {
 	
@@ -56,28 +48,11 @@ public class GameStartActivity extends Activity {
 		buttonIdMap.put(26, R.id.case26);
 	}
 	
->>>>>>> origin/master
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.gamestart);
-		
-<<<<<<< HEAD
-		
-		
-		case1 = (ImageButton) findViewById(R.id.case1);
-		case1.setOnClickListener(new View.OnClickListener() {
 
-			@Override
-			public void onClick(View v) {
-				case1.setImageResource(R.drawable.open_case2);
-			}
-		});
-		
-		
-		
-		
-=======
 		for (HashMap.Entry<Integer, Integer> entry : buttonIdMap.entrySet()) {
 		    Integer suitCaseId = entry.getKey();
 		    Integer imageButtonId = entry.getValue();
@@ -92,7 +67,5 @@ public class GameStartActivity extends Activity {
 				}
 			});
 		}
-
->>>>>>> origin/master
 	}
 }
