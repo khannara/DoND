@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Observable;
 import java.util.Observer;
 
-public class SuitCase extends Observable{
+public class SuitCase extends Observable {
 	private ArrayList<Observer> observers = new ArrayList<Observer>();  
 	private final int id;
 	private final int value; 
