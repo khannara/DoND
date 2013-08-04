@@ -16,7 +16,9 @@ import android.widget.ToggleButton;
 
 public class GameStartActivity extends Activity {
 	
-	private HashMap<Integer, ImageButton> buttonMap = new HashMap<Integer, ImageButton>();
+	private HashMap<SuitCase, ImageButton> buttonMap = new HashMap<SuitCase, ImageButton>();
+	private RoundKeeper roundKeeper = new RoundKeeper();
+	
 	static private HashMap<Integer, Integer> buttonIdMap;
 	static {
 		buttonIdMap = new HashMap<Integer, Integer>();
@@ -52,18 +54,23 @@ public class GameStartActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.gamestart);
-
+		
+		
 		for (HashMap.Entry<Integer, Integer> entry : buttonIdMap.entrySet()) {
 		    Integer suitCaseId = entry.getKey();
 		    Integer imageButtonId = entry.getValue();
-		    final ImageButton suitcase = (ImageButton) findViewById(imageButtonId.intValue());
-		    buttonMap.put(suitCaseId, suitcase);
+		    final ImageButton suitCaseButton = (ImageButton) findViewById(imageButtonId.intValue());
 		    
-			suitcase.setOnClickListener(new View.OnClickListener() {
+		    final SuitCase suitCase = new SuitCase.SuitCaseBuilder(suitCaseId, 1000).build();
+		    suitCase.addObserver(roundKeeper);
+		    buttonMap.put(suitCase, suitCaseButton);
+		    
+			suitCaseButton.setOnClickListener(new View.OnClickListener() {
 
 				@Override
 				public void onClick(View v) {
-					suitcase.setImageResource(R.drawable.open_case2);
+					suitCase.openCase();
+					suitCaseButton.setImageResource(R.drawable.open_case2);
 				}
 			});
 		}
