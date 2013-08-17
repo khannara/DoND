@@ -4,12 +4,9 @@ import java.util.ArrayList;
 import java.util.Observable;
 import java.util.Observer;
 
-<<<<<<< HEAD
+
 public class SuitCase extends Observable {
-	private ArrayList<Observer> observers = new ArrayList<Observer>();  
-=======
-public class SuitCase extends Observable { 
->>>>>>> 5867ef2841d03f1182964bb208b2a91b572f4cd9
+	private ArrayList<Observer> observers; 
 	private final int id;
 	private final int value; 
 	boolean open;
@@ -18,6 +15,7 @@ public class SuitCase extends Observable {
 		id 				= suitCaseBuilder.id;
 		value 			= suitCaseBuilder.value;
 		open 			= suitCaseBuilder.open; 
+		observers		= suitCaseBuilder.observers;
 	}
 	
 	public static class SuitCaseBuilder {
@@ -26,6 +24,7 @@ public class SuitCase extends Observable {
 		private final int value; 
 		// optional fields
 		boolean open = false; 
+		private ArrayList<Observer> observers = new ArrayList<Observer>();
 
 		public SuitCaseBuilder(int id, int value) {
 			this.id = id; 
@@ -34,6 +33,10 @@ public class SuitCase extends Observable {
 		public SuitCaseBuilder open(boolean input) {
 			open = input; 
 			return this; 
+		}
+		public SuitCaseBuilder observers (ArrayList<Observer> input) {
+			observers = input;
+			return this;
 		}
 		public SuitCase build() {
 			return new SuitCase(this);
