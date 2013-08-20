@@ -16,8 +16,4 @@ public class RoundKeeper implements Observer {
 		
 	}
 	
-	Round getRound()
-	{
-		return new Round(6);
-	}
 }

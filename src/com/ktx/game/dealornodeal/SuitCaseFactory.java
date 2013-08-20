@@ -5,7 +5,9 @@ import java.util.Iterator;
 import java.util.Observer;
 import java.util.Random;
 
-public abstract class SuitCaseFactory {
+import android.util.Log;
+
+public class SuitCaseFactory {
 	ArrayList<SuitCase> allSuitCases = new ArrayList<SuitCase>();
 	
 	public void init()
@@ -36,9 +38,11 @@ public abstract class SuitCaseFactory {
 		allSuitCases.add(new SuitCase.SuitCaseBuilder(24, 500000).open(false).build());
 		allSuitCases.add(new SuitCase.SuitCaseBuilder(25, 750000).open(false).build());
 		allSuitCases.add(new SuitCase.SuitCaseBuilder(26, 1000000).open(false).build());
+		shuffle(allSuitCases);
+		Log.i("", "" + allSuitCases.get(0));
 	}
 
-	public void shuffle(ArrayList<SuitCase> allSuitCases) {
+	private void shuffle(ArrayList<SuitCase> allSuitCases) {
 		Random random = new Random(System.currentTimeMillis());
 		Iterator<SuitCase> iterator = allSuitCases.iterator();
 		while (iterator.hasNext()) {
@@ -46,12 +50,21 @@ public abstract class SuitCaseFactory {
 		}
 	}
 	
-	public static <T> void swap(T object1, T object2) {
+	private static <T> void swap(T object1, T object2) {
 		T temp = object1;
 		object1 = object2;
 		object2 = temp;
 	}
 	
+	//TODO: implement binary search
+	public SuitCase getSuitCase(int id){
+		for (SuitCase suitCase : allSuitCases){
+			if (suitCase.id() == id ) {
+				return suitCase;
+			}
+		}
+		return null;
+	}
 	public void addObservers(Observer observer) {
 		for (SuitCase suitCase : allSuitCases) {
 			suitCase.addObserver(observer);
