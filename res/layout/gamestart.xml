@@ -195,5 +195,10 @@
             android:layout_height="70px"
             android:src="@drawable/one" />
     </TableRow>
+    <TextView
+            android:id="@+id/text"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:src="@drawable/one" />
 
 </TableLayout>

@@ -5,7 +5,7 @@ import java.util.Observer;
 
 public class Banker implements Observer{
 	//TODO: what is the initial money?
-	double totalCash = 3000000.00;
+	double totalCash = 3418418.00;
 	
 	//TODO: do whatever when get updated;
 	public void update(Observable observable, Object object) {
@@ -13,9 +13,12 @@ public class Banker implements Observer{
 		totalCash = totalCash - suitCase.value();
 	}
 	
-	public double offer(Round round) {
-		double averageCashPerCase = totalCash/round.numCasesToOpen();
-		return averageCashPerCase * round.getRound()/9.986;
+	public int offer(Round round) {
+		double averageCashPerCase = totalCash  / round.numCasesToOpen();
+        if (round.numCasesToOpen() != 1) {
+            return  (int) (round.getRound() * .13 * averageCashPerCase);
+        }
+		return (int) averageCashPerCase;
 	}
 
 }

@@ -5,8 +5,6 @@ import java.util.Iterator;
 import java.util.Observer;
 import java.util.Random;
 
-import android.util.Log;
-
 public class SuitCaseFactory {
 	ArrayList<SuitCase> allSuitCases = new ArrayList<SuitCase>();
 	
@@ -39,7 +37,6 @@ public class SuitCaseFactory {
 		allSuitCases.add(new SuitCase.SuitCaseBuilder(25, 750000).open(false).build());
 		allSuitCases.add(new SuitCase.SuitCaseBuilder(26, 1000000).open(false).build());
 		shuffle(allSuitCases);
-		Log.i("", "" + allSuitCases.get(0));
 	}
 
 	private void shuffle(ArrayList<SuitCase> allSuitCases) {

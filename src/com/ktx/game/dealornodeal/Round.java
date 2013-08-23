@@ -59,9 +59,8 @@ public class Round implements Observer{
 		break;
 		case 3 : round = 9;
 		break;
-		case 2 : round = 10;
-		break; 
-		case 1 : round = 11;
+		case 2 :
+		case 1 : round = 10;
 		
 		}
 	}
