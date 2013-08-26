@@ -11,19 +11,20 @@ import android.widget.TextView;
 
 
 public class GameStartActivity extends Activity {
-	
+    SuitCaseFactory suitCaseFactory = new SuitCaseFactory();
 	private HashMap<SuitCase, ImageButton> buttonMap = new HashMap<SuitCase, ImageButton>();
 	private Round round = new Round(26,1);
 	private Banker banker = new Banker();
-    TextView textView;
+    TextView offering, openedCase;
 
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.gamestart);
-		SuitCaseFactory suitCaseFactory = new SuitCaseFactory();
+
 		suitCaseFactory.init();
+        suitCaseFactory.shuffle(suitCaseFactory.allSuitCases);
         suitCaseFactory.addObservers(round);
         suitCaseFactory.addObservers(banker);
 		Iterator<SuitCase> iterator = suitCaseFactory.allSuitCases.iterator();
@@ -59,7 +60,8 @@ public class GameStartActivity extends Activity {
     protected void onResume() {
         super.onResume();
 
-        textView = (TextView) findViewById(R.id.text);
+        offering = (TextView) findViewById(R.id.offering);
+        openedCase = (TextView) findViewById(R.id.openedCase);
         for (HashMap.Entry<SuitCase, ImageButton> entry : buttonMap.entrySet()) {
             final ImageButton imageButton = entry.getValue();
             final SuitCase suitCase = entry.getKey();
@@ -69,7 +71,8 @@ public class GameStartActivity extends Activity {
                 @Override
                 public void onClick(View v) {
                     suitCase.openCase();
-                    textView.setText("offering: " + banker.offer(round));
+                    offering.setText("offering: " + banker.offer(round));
+                    openedCase.setText("The case has:" + suitCase.value());
                     imageButton.setImageResource(R.drawable.open_case2);
 
                 }

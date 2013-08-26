@@ -2,11 +2,10 @@ package com.ktx.game.dealornodeal;
 
 import java.util.Observable;
 
-
 public class SuitCase extends Observable {
 	private final int id;
 	private final int value; 
-	boolean open;
+	private boolean open;
 	
 	private SuitCase(SuitCaseBuilder suitCaseBuilder) {
 		id 				= suitCaseBuilder.id;
@@ -50,20 +49,5 @@ public class SuitCase extends Observable {
 	public int value() {
 		return this.value;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
 

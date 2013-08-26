@@ -1,13 +1,11 @@
 package com.ktx.game.dealornodeal;
 
-import com.ktx.game.dealornodeal.R;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
-import android.widget.*;
+import android.widget.Button;
 
 public class MainActivity extends Activity {
 	
@@ -28,8 +26,6 @@ public class MainActivity extends Activity {
 		});
 
     }
-    
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

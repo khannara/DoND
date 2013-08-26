@@ -16,7 +16,7 @@ public class Banker implements Observer{
 	public int offer(Round round) {
 		double averageCashPerCase = totalCash  / round.numCasesToOpen();
         if (round.numCasesToOpen() != 1) {
-            return  (int) (round.getRound() * .13 * averageCashPerCase);
+            return  (int) (round.getRound() * .12 * averageCashPerCase);
         }
 		return (int) averageCashPerCase;
 	}

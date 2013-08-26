@@ -1,7 +1,6 @@
 package com.ktx.game.dealornodeal;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.Observer;
 import java.util.Random;
 
@@ -36,24 +35,21 @@ public class SuitCaseFactory {
 		allSuitCases.add(new SuitCase.SuitCaseBuilder(24, 500000).open(false).build());
 		allSuitCases.add(new SuitCase.SuitCaseBuilder(25, 750000).open(false).build());
 		allSuitCases.add(new SuitCase.SuitCaseBuilder(26, 1000000).open(false).build());
-		shuffle(allSuitCases);
 	}
 
-	private void shuffle(ArrayList<SuitCase> allSuitCases) {
+	static public <T> void  shuffle(ArrayList<T> list) {
 		Random random = new Random(System.currentTimeMillis());
-		Iterator<SuitCase> iterator = allSuitCases.iterator();
-		while (iterator.hasNext()) {
-			swap(iterator.next(), allSuitCases.get(random.nextInt(26)));
+		for(int i = 0; i < list.size(); i++) {
+            swap(list, i, random.nextInt(list.size()));
 		}
 	}
-	
-	private static <T> void swap(T object1, T object2) {
-		T temp = object1;
-		object1 = object2;
-		object2 = temp;
+
+	private static <T> void swap(ArrayList<T> list, int index1, int index2) {
+		T temp = list.get(index1);
+        list.set(index1, list.get(index2));
+        list.set(index2, temp);
 	}
-	
-	//TODO: implement binary search
+
 	public SuitCase getSuitCase(int id){
 		for (SuitCase suitCase : allSuitCases){
 			if (suitCase.id() == id ) {
@@ -67,4 +63,8 @@ public class SuitCaseFactory {
 			suitCase.addObserver(observer);
 		}
 	}
+
+    public ArrayList getAllSuitCases() {
+        return allSuitCases;
+    }
 }

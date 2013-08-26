@@ -196,7 +196,12 @@
             android:src="@drawable/one" />
     </TableRow>
     <TextView
-            android:id="@+id/text"
+            android:id="@+id/offering"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:src="@drawable/one" />
+    <TextView
+            android:id="@+id/openedCase"
             android:layout_width="70px"
             android:layout_height="70px"
             android:src="@drawable/one" />
